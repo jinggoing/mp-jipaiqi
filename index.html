@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jipaiqi</title>
+    <style>
+      html {
+        font-size: 100px;
+      }
+    </style>
+    <script>
+      document.body.style.overflow='hidden';
+      document.addEventListener("touchmove",mo,false);//禁止页面滑动
+      var x = 100
+
+      function resize() {
+        x = parseInt(window.innerWidth * 100 / 750)
+        if (window.innerWidth > 750) {
+          x = 100
+        }
+        document.getElementsByTagName('html')[0].style.fontSize = x + 'px'
+      }
+
+      window.onresize = function () {
+        resize()
+      }
+      resize()
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
