@@ -59,8 +59,8 @@ export default {
         {text: 'K', count: defaultCount * 4, diamond: defaultCount, club: defaultCount, heart: defaultCount, spade: defaultCount},
         {text: 'A', count: defaultCount * 4, diamond: defaultCount, club: defaultCount, heart: defaultCount, spade: defaultCount},
         {text: '2', count: defaultCount * 4, diamond: defaultCount, club: defaultCount, heart: defaultCount, spade: defaultCount},
-        {text: '大王', count: defaultCount},
-        {text: '小王', count: defaultCount}
+        {text: '小王', count: defaultCount},
+        {text: '大王', count: defaultCount}
       ]
     },
     handleHuase (obj) {
@@ -110,19 +110,26 @@ export default {
   margin-top: 1rem;
 }
 .gird-container{
-  display: grid;
+  /* display: grid;
   grid-template-rows: 2.112rem 2.112rem 2.112rem;
-  grid-template-columns: 1.368rem 1.368rem 1.368rem 1.368rem 1.368rem;
+  grid-template-columns: 1.368rem 1.368rem 1.368rem 1.368rem 1.368rem; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 }
 .gird-item{
-  margin: 5px;
+  width: 1.368rem;
+  height: 2.112rem;
+  margin: 2px;
   position: relative;
   border: 1px solid #cccccc;
   border-radius: 5px;
   background-color: #FFFFFF;
 }
 .console{
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   font-size: .3rem;
   display: flex;
   flex-direction: row;

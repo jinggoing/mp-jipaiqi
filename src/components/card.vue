@@ -97,12 +97,17 @@ export default {
 }
 
 .huase{
-  margin: .43rem 0 0 .07rem;
-  display: grid;
+  margin: .52rem 0 0 .14rem;
+  /* display: grid;
   grid-template-rows: .5rem .5rem;
-  grid-template-columns: .5rem .5rem;
+  grid-template-columns: .5rem .5rem; */
+  display: flex;
+  flex-wrap: wrap;
 }
-.huase .icon{
+
+.huase i{
+  height: .5rem;
+  width: .5rem;
   line-height: .5rem;
   text-align: center;
   border: 1px solid #cccccc;
@@ -112,6 +117,7 @@ export default {
   text-align: center;
 }
 .card{
+  width: 100%;
   font-size: .3rem;
 }
 .left-top{
