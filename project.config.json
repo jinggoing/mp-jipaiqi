@@ -9,7 +9,7 @@
 	},
 	"miniprogramRoot": "./dist/",
 	"compileType": "miniprogram",
-	"appid": "wx4aca060275d8ab9a",
+	"appid": "",
 	"projectname": "jipaiqi",
 	"condition": {
 		"search": {
