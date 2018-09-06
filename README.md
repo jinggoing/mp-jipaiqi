@@ -2,20 +2,6 @@
 
 > A Mpvue project
 
-## Build Setup
+## 小程序码
 
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+![](https://user-gold-cdn.xitu.io/2018/9/6/165accff99aa4a94?w=179&h=179&f=jpeg)
