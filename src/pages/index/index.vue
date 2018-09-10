@@ -129,12 +129,14 @@ export default {
   background-color: #FFFFFF;
 }
 .console{
+  display: flex;
   margin-top: 1rem;
   font-size: .3rem;
-  display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: baseline;
 }
+
 .weui-btn {
     width: 2rem;
     border-width: 0;
