@@ -41,6 +41,11 @@ export default {
       }
     }
   },
+  onShareAppMessage () {
+    return {
+      title: '可记花色的记牌器，多副牌可选'
+    }
+  },
   methods: {
     pokersInit () {
       this.updateHistory = []
@@ -101,6 +106,9 @@ export default {
   },
   mounted () {
     this.pokersInit()
+    wx.showShareMenu({
+      withShareTicket: true
+    })
   }
 }
 </script>
