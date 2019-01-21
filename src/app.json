@@ -1,11 +1,31 @@
 {
   "pages": [
-    "pages/index/main"
+    "pages/index/main",
+    "pages/other/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "花色记牌器",
     "navigationBarTextStyle": "black"
-  }
+  },
+  "tabBar": {
+    "selectedColor": "#739AE7",
+    "color": "#4D5F80",
+    "list": [
+      {
+        "pagePath": "pages/index/main",
+        "text": "花色记牌器",
+        "iconPath": "static/icons/tts.png",
+        "selectedIconPath": "static/icons/tts_selected.png"
+      },
+      {
+        "pagePath": "pages/other/main",
+        "text": "其它",
+        "iconPath": "static/icons/other.png",
+        "selectedIconPath": "static/icons/other_selected.png"
+      }
+    ]
+  },
+  "navigateToMiniProgramAppIdList": ["wx29a19992eacac173", "wx2a01aefc88bbe77a", "wx4aca060275d8ab9a", "wxcb7e75e7a6a8d5c6"]
 }
