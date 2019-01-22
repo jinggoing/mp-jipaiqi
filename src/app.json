@@ -16,8 +16,8 @@
       {
         "pagePath": "pages/index/main",
         "text": "花色记牌器",
-        "iconPath": "static/icons/tts.png",
-        "selectedIconPath": "static/icons/tts_selected.png"
+        "iconPath": "static/icons/meihua.png",
+        "selectedIconPath": "static/icons/meihua_selected.png"
       },
       {
         "pagePath": "pages/other/main",
