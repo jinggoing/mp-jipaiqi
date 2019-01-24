@@ -48,6 +48,13 @@ export default {
           desc: '给图片（主要是用于证件）加上指定文字的水印，服务端不会存储用户的任何图片信息，可直接断网使用。'
         },
         {
+          name: '每月缴税计算',
+          icon: '../../static/miniProgramsIcons/gs.png',
+          appId: 'wx2d58df3cd62ac8b0',
+          path: 'page/index/main',
+          desc: '2019最新个税计算，生成每月应缴税列表'
+        },
+        {
           name: 'MyRegister',
           icon: '../../static/miniProgramsIcons/myregister.png',
           appId: 'wxcb7e75e7a6a8d5c6',
