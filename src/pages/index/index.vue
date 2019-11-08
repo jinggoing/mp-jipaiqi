@@ -11,6 +11,15 @@
       <div class="weui-btn weui-btn_primary" @click="setDefaultCount">{{defaultCount===1? '单':'两'}}副牌</div>
       <div v-if="updateHistory.length > 0" class="weui-btn weui-btn_warn" @click="reset">重置</div>
     </div>
+    <div class="ad" v-show="adIndex === 0">
+      <ad unit-id="adunit-9a6af233b42ce641"></ad>
+    </div>
+    <div class="ad" v-show="adIndex === 1">
+      <ad unit-id="adunit-cf39b650117cfdc8"></ad>
+    </div>
+    <div class="ad" v-show="adIndex === 2">
+      <ad unit-id="adunit-dbcd2e475beb544b"></ad>
+    </div>
     <div class="readme">
       注:
       <div> 1.可选一副牌或两副牌</div> 
@@ -29,6 +38,7 @@ export default {
   data () {
     const defaultCount = 1
     return {
+      adIndex: 0,
       defaultCount: defaultCount,
       updateHistory: [],
       pokers: []
@@ -105,17 +115,25 @@ export default {
     }
   },
   mounted () {
+    const self = this
     this.pokersInit()
     wx.showShareMenu({
       withShareTicket: true
     })
+    setInterval(function () {
+      if (self.adIndex >= 2) {
+        self.adIndex = 0
+      } else {
+        self.adIndex += 1
+      }
+    }, 3000)
   }
 }
 </script>
 
 <style scoped>
 .container{
-  margin-top: 1rem;
+  margin-top: 0.2rem;
 }
 .gird-container{
   /* display: grid;
@@ -138,7 +156,7 @@ export default {
 }
 .console{
   display: flex;
-  margin-top: 1rem;
+  margin-top: .3rem;
   font-size: .3rem;
   flex-direction: row;
   justify-content: center;
@@ -188,8 +206,12 @@ export default {
 }
 
 .readme{
-  margin-top: .5rem;
+  margin-top: .2rem;
   font-size: .2rem;
   color: #333333;
+}
+.ad{
+  width: 750rpx;
+  margin-top: 0.1rem;
 }
 </style>
